@@ -1,0 +1,167 @@
+@import '../../../../Style/variables';
+@import '../../../../Style/mixin';
+
+.modal_content{
+    .ant-modal-header{
+        padding: 0;
+        border:0;
+    }
+    .ant-modal-body{
+        background-color: $main_bg;
+    }
+    .ant-modal-close{
+        color: #333;
+    }
+    .modal_main{
+        input{
+            text-align: center;
+        }
+        .m_m_content{
+            margin: 20px 0;
+            font-size: 14px;
+            color: $color_363636;
+
+            .modal_periods{
+                .m_p_text{
+                    margin: 0 10px 0 20px;
+                    @include lh(28px);
+                }
+                .m_periods_list{
+                    li{
+                        float: left;
+                        border: 1px solid #B2B2B2;
+                        @include wh(42px, 28px);
+                        line-height: 26px;
+                        margin-right: 5px;
+                        text-align: center;
+                        font-size: 12px;
+                        background: #fff;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .m_periods_active{
+                        background: #FFF5F5 url(./Img/time_active.png) no-repeat bottom right;
+                        border: 1px solid $rodio-check-color;
+                        color: $rodio-check-color;
+                    }
+                }
+            }
+            .periods_input, .multiple_input{
+                margin-left: 18px;
+                &>span{
+                    margin: 0 8px;
+                }
+            }
+            .periods_inputlv{
+                margin-left: 5px;
+            }
+            .m_m_btn{
+                margin-left: 18px;
+                height: 30px;
+                @include red_gradient;
+            }
+            .ant-input-number{
+                @include borderRadius(0);
+            }
+        }
+        .m_m_table{
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 8px;
+            .ant-input-number{
+                @include borderRadius(0);
+                width: 70px;
+            }
+            .ant-checkbox-wrapper span{
+                font-size: 14px;
+            }
+            .thClass{
+                height: 33px;
+                line-height: 33px;
+                border:1px solid #dddddd;
+                background: #f8f7f3;
+                font-size: 14px;
+                color: #333;
+                div{
+                    float: left;
+                    text-align: center;
+                    position: relative;
+                }
+                .span{
+                    float: left;
+                    text-align: center;
+                }
+                div:after{
+                    position: absolute;
+                        content: '';
+                        width: 1px;
+                        height: 16px;
+                        background: #cccccc;
+                        right: 0;
+                        top: 8px;
+                }
+            }
+            .tableTrace{
+                width: 100%;
+                height: 250px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                table{
+                     width: 101%;
+                     border-collapse:collapse;
+                     tr{
+                        width: 100%;
+                        height: 41px;
+                        line-height: 41px;
+                        margin: 0;
+                        padding: 0;
+                        border-bottom:1px solid #e9e9e9;
+                        .ant-input-number{
+                            width: 60px;
+                            height: 25px;
+                            input{
+                                height: 23px;
+                                line-height: 23px;
+                            }
+                        }
+                        td{
+                            text-align: center;
+                            vertical-align: middle;
+                            color:#333;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .m_m_footer{
+            margin-top: 15px;
+            @include lh(37px);
+            color: $color_363636;
+            .m_m_left_btn{
+                color:#333;
+                .ant-btn-primary{
+                    color:#333;
+                    @include gray_gradient;
+                }
+            }
+            .m_m_footer_info{
+                font-size: 14px;
+                li{
+                    float: left;
+                    em{
+                        font-style: normal;
+                        color: #BD0000;
+                    }
+                    &:last-child{
+                        @include red_gradient;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+

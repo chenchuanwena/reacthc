@@ -1,0 +1,39 @@
+@import '../../../Style/variables';
+@import '../../../Style/mixin';
+
+.c_nav{
+    background-color: $background_F5F5F5;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom: 2px solid $color_CF2027;
+    @include lh(45px);
+    .nav_list{
+        li{
+            a{
+                display: inline-block;
+                color: $color_363636;
+                height: 45px;
+                padding: 0 20px;
+                text-align: center;
+            }
+            float: left;
+            &:hover{
+                cursor: pointer;
+                background-color: $hover_background;
+                color:#fff;
+                a{
+                    color:#fff;
+                }
+            }
+        }
+        .nav_active{
+            box-sizing: border-box;
+            @include gradient(0, 0, 0, bottom, #F92626, #CA2124);
+            @include lh(45px);
+            color:#fff;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}

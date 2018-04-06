@@ -1,0 +1,14 @@
+@import '../../Style/variables';
+@import '../../Style/mixin';
+
+.dns{
+    .dns_top{
+        height: 80px;
+        background-color: #fff;
+        padding-top: 15px;
+    }
+    text-align: center;
+    .dns_top_img{
+        width: 100%;
+    }
+}

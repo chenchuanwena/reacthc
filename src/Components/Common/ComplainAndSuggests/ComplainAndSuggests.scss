@@ -1,0 +1,55 @@
+@import '../../../Style/variables';
+@import '../../../Style/mixin';
+$border_color: #C8C8C8;
+
+.complain-modal {
+    text-align: center;
+    white-space: nowrap;
+    textarea {
+        resize: none;
+    }
+    .ant-modal-content{
+        background: transparent;
+        box-shadow:none;
+    }
+    .ant-modal-body{
+        white-space: pre-wrap;
+        font-size: 14px;
+        background: #fff;
+    }
+    .ant-input{
+        width: 400px;
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .complain_textarea{
+        vertical-align: text-top;
+        margin-left: 30px;
+        width: 400px;
+        height: 110px;
+        overflow-y: scroll;
+        padding: 5px 8px;
+    }
+    .complain_textarea:focus{
+        outline:none;
+        border-color: $color_CF2027;
+    }
+    li{
+        margin-top: 10px;
+    }
+    .c_warn_txt{
+        margin-left: 10px;
+        color: red;
+    }
+    .btn_group{
+        font-size: 14px;
+        margin-bottom: 8px;
+        text-align: left;
+        padding-left: 73px;
+    }
+    .c_tip{
+        text-align: end;
+        margin-right: 26px;
+    }
+}
+

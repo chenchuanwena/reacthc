@@ -1,0 +1,252 @@
+@import '../../../Style/variables';
+@import '../../../Style/mixin';
+.bet_content{
+    margin: 11px 0 10px 0;
+}
+.content_title{
+    overflow: hidden;
+    @include wh(100%, 98px);
+    background: $backgourn-color;
+    border:1px solid $color_CF2027;
+    .content_cz_logo{
+        margin:0;
+        @include wh(110px, 98px);
+        line-height: 98px;
+        text-align: center;
+        img{
+            width: 72px;
+            height: 72px;
+            vertical-align: middle;
+        }
+    }
+}
+.title_list>li{
+   float: left;
+}
+.title_list{
+    .monikj{
+        float: left;
+        margin-top: 20px;
+        margin-left: 54px;
+        cursor: pointer;
+        width: 165px;
+        height: 55px;
+        outline: none;
+        @include red_gradient;
+        line-height: 55px;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        padding: 0;
+        &:disabled{
+            outline: none;
+            color: #fff;
+            border:1px solid #ddd;
+            cursor:not-allowed;
+        }
+    }
+    .ant-btn:hover{
+        background:linear-gradient(#fb2222,#c72023)
+    }
+}
+.content_center{
+    padding-top: 8px;
+    li{
+        float: left;
+    }
+}
+.mmc{
+    width: auto;
+    li{
+        margin-top: 24px;
+    }
+}
+.ball_number_mmc{
+    min-width: 320px;
+    float: left;
+    margin-top: 21px;
+    margin-left: 34px;
+    li{
+        float: left;
+        @include bis('./Img/number_bg.png');
+        @include wh(52px, 52px);
+        line-height: 52px;
+        text-align: center;
+        margin-right:10px;
+        font-size: 30px;
+        color: #fff;
+        font-weight: bold;
+        font-family: myFirstFont;
+    }
+}
+.m_bottom{
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 16px;
+    .ant-switch:after{
+        background:#d0cece;
+    }
+}
+.content_cz_text{
+    width: 120px;
+    .cz_name{
+        font-size: 16px;
+        font-weight: bold;
+        span{
+            margin-right:10px;
+        }
+    }
+    .cz_periods{
+        font-size: 12px;
+    }
+    .c_t_facade{
+        color:#FFDB70;
+        &:hover{
+            cursor: pointer;
+            text-decoration:underline;
+            color:#FFE684;
+        }
+    }
+}
+.abort_time{
+    width: 225px;
+    text-align: center;
+    .abort_time_text{
+        color: #333;
+        font-size: 12px;
+    }
+    .item_text{
+        float: left;
+        @include lh(56px);
+        font-size: 42px;
+        color:#333;
+        text-align: center;
+        font-weight: bold;
+        font-family: myFirstFont;
+        position: relative;
+    }
+    .maohao:after{
+        position: absolute;
+        content: ':';
+        color:#333;
+        right: -24px;
+        top:-5px;
+        font-size: 38px;
+    }
+    .item_type{
+        float: left;
+        margin: 45px 23px 0 0;
+        color: #333;
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+}
+.voice_switch{
+    span{
+        margin:-3px 8px 0 0;
+        font-size: 12px;
+    }
+    .ant-switch-small:after{
+        width: 17px;
+        height: 17px;
+        top: -2.5px;
+        left: -3.5px;
+    }
+}
+.praise_mark{
+    padding: 8px 0 0 23px;
+    position: relative;
+    overflow: hidden;
+    .praise_mark_text{
+        img{
+            vertical-align: middle;
+            margin-top: -3px;
+        }
+        .issueName{
+            width: 200px;
+            display: inline-block;
+        }
+        color: $color_CF2027;
+        font-size: 12px;
+        margin: 0 0 7px 5px;
+        .method_introduce{
+            @include wh(auto, 18px);
+            color: #333;
+            padding: 0 4px;
+            margin-right: 3px;
+            font-size: 12px;
+            &:hover{
+                cursor: pointer
+            }
+        }
+    }
+    .praise_mark_text_pk10{
+        float: left;
+        color: $color_CF2027;
+        font-size: 12px;
+        margin: 8px 10px 0 3px;
+        a{
+            color:#333;
+        }
+        img{
+            vertical-align: middle;
+            margin-top: -3px;
+        }
+    }
+    .ball_number{
+        left: 0;
+        min-width: 320px;
+        li{
+            float: left;
+            @include bis('./Img/number_bg.png');
+            @include wh(52px, 52px);
+            line-height: 50px;
+            text-align: center;
+            font-size: 36px;
+            margin-left: 11px;
+            color: #fff;
+            font-weight: bold;
+            font-family: myFirstFont;
+            .kjCodeClass{
+                font-size: 30px;
+            }
+        }
+    }
+    .ball_number_pk10{
+        float: left;
+        width: 245px;
+        margin-left: 4px;
+        li{
+            float: left;
+            @include bis('./Img/number_bg.png');
+            @include wh(41px, 41px);
+            line-height: 37px;
+            text-align: center;
+            font-size: 22px;
+            color: #fff;
+            margin-right: 8px;
+            font-weight: bold;
+            font-family: myFirstFont;
+        }
+    }
+}
+
+.ant-switch-checked {
+    border-color: #BF0000 !important;
+    background-color: #BF0000 !important;
+}
+//.ant-switch{
+    //border-color: #BF0000;
+    //background-color: #BF0000;
+//}
+.ant-switch-small:after {
+    width: 17px;
+    height: 17px;
+    top: -2.5px;
+    left: -3.5px;
+}
+.ant-message-notice-content{
+    padding:16px 32px;
+    font-size: 14px;
+}

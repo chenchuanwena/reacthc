@@ -1,0 +1,183 @@
+@import '../../../Style/variables';
+@import '../../../Style/mixin';
+
+.nav_top{
+    background: #fff;
+    .nav_top_content{
+        width: $nav_width_1200;
+        margin: 0 auto;
+        color: #666;
+        a{
+            color: #666;
+        }
+        .logo{
+            margin-top: 12px;
+        }
+    }
+    .n_t_lt{
+        text-align: right;
+    }
+    .n_t_list{
+        @include lh(40px);
+        .n_t_position{
+            position: relative;
+            &:hover .n_t_controler{
+                height: 180px;
+                @include transform(height, 0.3s);
+            }
+        }
+        .icon_arrows_bg{
+            &:before{
+                @include icon_arrows_bg(35px,45%,$color_CF2027,10px,#fff,-45deg);
+                z-index: 1000;
+            }
+        }
+        .n_t_controler{
+            position: absolute;
+            top: 40px;
+            left: -90px;
+            z-index: 999;
+            height: 0;
+            overflow: hidden;
+        }
+        .n_t_down_list{
+            @include wh(300px, 168px);
+            border: 1px solid $color_CF2027;
+            background-color: #fff;
+            padding: 8px 12px 0;
+            li{
+                @include lh(31px);
+                border-bottom: 1px dotted #7A7A7E;
+                &:hover{
+                    cursor: auto;
+                }
+                &:last-child{
+                    border-bottom: 0;
+                    cursor: pointer;
+                }
+            }
+            .out_logo_btn{
+                text-align: center;
+            }
+        }
+        .n_t_cursor:hover{
+            cursor: pointer;
+        }
+        .n_t_cursor_color{
+            padding: 0;
+            span, a{
+                display: inline-block;
+                @include wh(55px, 40px);
+                text-align: center;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .n_t_message{
+            padding: 0 0 0 15px;
+            width: 65px;
+        }
+        .n_t_balance_p{
+            position: relative;
+            width: 198px;
+            &:hover .n_t_controler{
+                height: 240px;
+                @include transform(height, 0.3s);
+            }
+            .n_t_down_list{
+                @include wh(200px, 230px);
+            }
+            .n_t_controler{
+                left: -1px;
+            }
+            .cpbalance{
+                width: 90px;
+                display: inline-block;
+            }
+        }
+        .ant-badge-count{
+            @include lh(17px);
+            padding: 0 4px;
+            background: $color_CF2027;
+            box-shadow: none;
+            -webkit-transform: translateX(-10%);
+            -ms-transform: translateX(-10%);
+            transform: translateX(-10%);
+        }
+        .n_t_hide_balance{
+            padding: 14px 5px 10px;
+            float: right;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .color_CF2027{
+        color: $color_CF2027;
+        i{
+            font-style: normal;
+        }
+    }
+    .n_t_list>li{
+        padding: 0 15px;
+        float: left;
+        border-left: 1px solid #EAEAEA;
+        &:hover{
+            background: #e8e8e8;
+        }
+        &:last-child{
+            border-right: 1px solid #EAEAEA;
+        }
+    }
+
+    .show-notice{
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+        overflow: hidden;
+        vertical-align: top;
+        position: relative;
+        //padding-left: 25px;
+        //background: url(./Img/notice_icon.png) no-repeat center left;
+        //text-align: left;
+        .notice-list{
+            height: 320px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        li{
+            @include lh(40px);
+            color: $color_CF2027;
+            text-align: right;
+            img{
+                width: 19px;
+                vertical-align: text-bottom;
+                margin-right: 10px;
+            }
+        }
+        li:hover{
+            cursor: pointer;
+        }
+    }
+    .anticon-caret-down{
+        font-size: 12px;
+        color: #666;
+    }
+    .ant-btn, .ant-btn-primary{
+        width: 100%;
+        background-color: transparent;
+        border-color: transparent;
+        color: $color_363636;
+    }
+    .ant-btn:before{
+        background: transparent;
+    }
+    .ant-btn-primary:hover,
+    .ant-btn-primary:focus {
+        color: #5D5D5D;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}

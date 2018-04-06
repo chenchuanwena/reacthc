@@ -1,0 +1,373 @@
+@import '../../Style/variables';
+@import '../../Style/mixin';
+$border_color: #C8C8C8;
+$width_100: 100%;
+
+.login_main{
+    .loginLogo{
+        text-align: center;
+    }
+    canvas{
+        background-image: radial-gradient(ellipse farthest-corner at center top, #000d4d 0%, #000105 100%);
+        position: absolute;
+        bottom: 0;
+    }
+    .l_nav_top{
+        @include wh($width_100, 64px);
+        line-height: 64px;
+        background: black;
+        font-size: 14px;
+        position: absolute;
+        top:0;
+        background-color: rgba(0,0,0,0.3);
+        .l_nav_top_content{
+            width: $nav_width_1200;
+            color: #fff;
+            a{
+                color: #fff;
+                display: inline-block;
+                padding: 0 15px;
+            }
+        }
+        .l_n_t_list li{
+            float: left;
+            color:#888888;
+            img{
+                transition:All 0.4s ease-in-out;
+                -webkit-transition:All 0.4s ease-in-out;
+                -moz-transition:All 0.4s ease-in-out;
+                -o-transition:All 0.4s ease-in-out;
+            }
+            &:hover{
+                color:#fff;
+                img{
+                    transform:rotateZ(360deg);
+                    -webkit-transform:rotateZ(360deg);
+                    -moz-transform:rotateZ(360deg);
+                    -o-transform:rotateZ(360deg);
+                    -ms-transform:rotateZ(360deg);
+                }
+
+            }
+
+
+        }
+        .l_n_t_list{
+            position: absolute;
+            right:2%;
+            img{
+                margin-bottom: -4px;
+                margin-right: 5px;
+            }
+
+        }
+
+
+    }
+    .l_password{
+        position: relative;
+        display: inline-block;
+        .l_forget{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: red;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .l_vali{
+        position: relative;
+        display: inline-block;
+        .l_valicode{
+            position: absolute;
+            top: 2px;
+            right: 10px;
+            color: red;
+            border-radius: 3px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .l-warn{
+        border-radius: 4px;
+        width: 300px;
+        background: #ca5e58;
+        margin: 75px auto 0;
+        padding: 5px;
+        .failure_text{
+            padding-left: 35px;
+            background: url(./Img/warn.png) no-repeat center left;
+            line-height: 30px;
+            color: #fff;
+        }
+        img{
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: -8px;
+        }
+
+    }
+    /*试玩模式 begin*/
+    .l_try_txt{
+        padding-left: 7px;
+        width: 436px;
+        display: inline-block;
+        height: 29px;
+        font-size: 15px;
+    }
+    .l_try_888{
+        font-size: 18px;
+        color: #df0019;
+    }
+    /*end*/
+    .activity_content{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        z-index: 999;
+        height: 140px;
+        background: url(./Img/pc_activity.png) no-repeat center center;
+        .pc_activity{
+            display: block;
+            height: 140px;
+        }
+        .close_content{
+            position: relative;
+            width: 820px;
+            margin: 0 auto;
+        }
+        .activity_close{
+            cursor: pointer;
+            padding: 4px 10px;
+            position: absolute;
+            right: 0;
+            top: -140px;
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+}
+.login{
+    width: 820px;
+    position: absolute;
+    left: 50%;
+    margin-left: -410px;
+    top: 50%;
+    margin-top: -270px;
+
+    .login_content{
+        margin-top: 100px;
+    }
+    .login_wrap{
+        .l_input{
+            width: 670px;
+            background-color: #fff;
+            display: inline-block;
+            border: 7px solid #fff;
+            border-top: 9px solid #fff;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+
+        }
+        .l_input_try{
+            width: 245px;
+            background-color: #fff;
+            display: inline-block;
+            border: 10px solid #fff;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+
+        }
+
+
+        .forget_pwd{
+            display: block;
+            margin-top: -17px;
+            margin-left: 229px;
+            text-decoration:underline;
+            color:#393947;
+        }
+
+    }
+    .l_m_content{
+        position: relative;
+        .l_m_select_list{
+           li{
+                width: 131px;
+                height: 34px;
+               font-size: 14px;
+                margin-left: 10px;
+               margin-right: -20px;
+               text-align: center;
+               line-height: 34px;
+                position: relative;
+                display: inline-block;
+                background: url(./Img/bg1.png) no-repeat bottom right;
+                cursor: pointer;
+                color: #fff;
+            }
+
+            li.l_m_select_list_active {
+                width: 131px;
+                height: 34px;
+                margin-right: -20px;
+                background: url(./Img/bg2.png) no-repeat bottom right;
+                z-index: 2;
+                color:#333333;
+            }
+
+        }
+        div.l_m_select_list_active{
+            width: 131px;
+            height: 34px;
+            font-size: 14px;
+            position: absolute;
+            left: 252px;
+            top: 0;
+            text-align: center;
+            line-height: 34px;
+            display: inline-block;
+            background: url(./Img/bg1.png) no-repeat bottom right;
+            cursor: pointer;
+            color: #fff;
+        }
+        .wechatQrcode{
+            position: absolute;
+            background: #fff;
+            left: 316px;
+            width: 210px;
+            height: 185px;
+            z-index: 20;
+            top: 100px;
+            canvas{
+                left: 5px;
+                top: 5px;
+            }
+        }
+    }
+    .ant-input{
+        @include wh(210px,40px);
+        margin-right: 8px;
+    }
+    .ant-btn-primary.login_btn{
+        width: 140px;
+        height: 56px;
+        font-size: 14px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius:0;
+    }
+
+
+}
+
+.m_accept_contract{
+    .ant-modal{
+        width: 720px !important;
+    }
+    .ant-modal-body{
+        white-space: pre-wrap;
+        height: 400px;
+        overflow-y: scroll;
+        background: #fff;
+        color: #333333;
+        padding-right: 5px;
+        p{
+            font-size: 14px;
+            text-indent: 28px;
+        }
+        .m_c_title{
+            font-weight: 600;
+            padding-left: 5px;
+        }
+    }
+    .ant-modal-header{
+        padding: 26px 16px;
+        background: #fff;
+
+        border: none;
+    }
+    .ant-modal-title{
+        text-align: center;
+        font-size: 22px;
+        color:#CF2027;
+    }
+    .ant-modal-footer{
+        padding: 24px 16px 24px 10px;
+        text-align: center;
+        span{
+            font-size: 15px;
+        }
+    }
+    .ant-btn{
+        padding: 5px 50px;
+    }
+
+}
+.l_accept{
+    display: block;
+    margin-top: -18px;
+    margin-left: 670px;
+    color: #fff;
+}
+
+.find_password_modal{
+    .password_list{
+        width: 240px;
+        margin: 0 auto;
+        li{
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        li:last-child{
+            margin: 0;
+        }
+        .l_m_vali{
+            position: relative;
+            .l_m_valicode{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                height: 34px;
+                border-bottom-right-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+            .ant-input{
+                padding-right: 70px;
+            }
+        }
+        .hint_text{
+            padding-top: 5px;
+            color: $color_CF2027;
+            height: 23px;
+            span{
+                width: 240px;
+                white-space: normal;
+            }
+        }
+
+        .m_name{
+            background-color: #f1eeee;
+            width: 240px;
+            height: 32px;
+            border: 1px solid $border_color;
+            text-align: center;
+            line-height: 32px;
+            color: #333333;
+            border-radius: 4px;
+        }
+    }
+}
+.hint_modal_succeed{
+    .ant-modal-body{
+        text-align: center;
+    }
+    .m_p_input{
+        color: #73b573;
+        margin-bottom: 25px;
+    }
+}
+

@@ -1,0 +1,64 @@
+@import '../../../../Style/variables';
+@import '../../../../Style/mixin';
+
+.ar_details{
+    .details_content{
+        margin: 20px auto;
+        width: 1000px;
+        font-size: 14px;
+        li{
+            line-height: 55px;
+            color: #4E4E4E;
+            border-bottom: 1px dashed #B3B3B3;
+            span{
+                display: inline-block;
+                &:first-child{
+                    width: 350px;
+                    margin-left: 100px;
+                }
+                &:nth-child(2){
+                    width: 300px;
+                }
+                &:last-child{
+                    width: 200px;
+                }
+            }
+        }
+        li:nth-child(2){
+            span{
+                b{
+                    font-weight: normal;
+                }
+                b:nth-child(2){
+                    width: 177px;
+                    display: inline-block;
+                    word-wrap: break-word;
+                    line-height: 20px;
+                    margin-top: 19px;
+                    vertical-align: top;
+                }
+            }
+
+        }
+    }
+    .ant-btn{
+        font-size: 14px;
+        padding: 5px 32px;
+    }
+    .t_l_table{
+        margin: 25px 10px 10px;
+        padding: 6px;
+        border: 1px solid #ccc;
+        background: #fff;
+    }
+    .nav_list {
+        li:first-child {
+            &:hover {
+                cursor: pointer;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

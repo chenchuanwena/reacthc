@@ -1,0 +1,36 @@
+@import '../../../Style/variables';
+@import '../../../Style/mixin';
+
+.home_m_lottery{
+    min-height: 260px;
+    li{
+        float: left;
+        width: 33.33%;
+        background: #fff;
+        overflow: hidden;
+        img{
+            vertical-align: middle;
+        }
+        &:hover .home_m_lottery_type{
+            bottom: 0;
+            cursor: pointer;
+        }
+        &:hover .home_m_lottery_type_hover{
+            background: $color_CF2027;
+        }
+    }
+    .home_m_lottery_type_hover{
+        @include wh(100%, 50px);
+        background: rgba(176,26,18, 0);
+    }
+    .home_m_lottery_type{
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        font-size: 14px;
+        @include transform(bottom, 0.3s);
+    }
+}

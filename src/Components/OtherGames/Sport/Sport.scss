@@ -1,0 +1,23 @@
+@import '../../../Style/variables';
+@import '../../../Style/mixin';
+$border_color: #C8C8C8;
+.sport{
+    height: 880px;
+    background: url('./Img/sport_bg.jpg') no-repeat center center;
+    text-align: center;
+    .sport_content{
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 500px;
+    }
+    .sport_transfer{
+        margin-right: 20px;
+    }
+    .sport_remain{
+        color: #F9F229;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+

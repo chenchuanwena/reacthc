@@ -1,0 +1,182 @@
+@import '../../../Style/variables';
+@import '../../../Style/mixin';
+
+$border-color: #B2B2B2;
+
+.team_list{
+    color: #363636;
+    font-size: 14px;
+    .team_list_top{
+        padding: 30px 20px 13px;
+        border-bottom: 1px solid #ccc;
+        .t_l_time{
+            padding-bottom: 10px;
+            .t_l_time_row{
+                @include lh(30px);
+                margin-bottom: 12px;
+                .ant-input{
+                    width: 155px;
+                    height: 30px;
+                }
+                .ant-input-number{
+                    width: 70px;
+                    @include lh(30px);
+                }
+                li{
+                    float: left;
+                    margin-right: 20px;
+                }
+            }
+
+        }
+    }
+    .t_l_table{
+        padding: 0 12px 50px;
+        .t_l_location_name{
+            @include lh(50px);
+        }
+        .t_l_table_list{
+            position: relative;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 8px 5px;
+            .ant-badge{
+                vertical-align: top;
+            }
+            .ant-btn{
+                padding: 2px 9px;
+            }
+        }
+    }
+    .ant-table-expanded-row{
+        td:first-child{
+            background-color: #ECFEFF;
+        }
+        td:last-child{
+            padding: 0;
+        }
+    }
+    .t_l_child_table{
+        tr{
+            background-color: #ECFEFF;
+        }
+    }
+    .tabel_footer{
+        text-align: center;
+        font-size: 14px;
+        span{
+            margin: 0 20px;
+        }
+        strong{
+            color: #E90000;
+            font-weight: normal;
+        }
+    }
+    .page{
+        margin-top: 10px;
+    }
+    .ant-btn-background-ghost {
+        border-color: #B2B2B2;
+        color: #666;
+    }
+    .ant-btn-background-ghost.ant-btn-primary {
+        color: $color_CF2027;
+        background-color: transparent;
+        border-color: $color_CF2027;
+    }
+    .new_application{
+        border-color: #369900 !important;
+        color: #369900 !important;
+    }
+    .recharge_btn{
+        margin-left: 5px;
+    }
+    .game_record{
+        margin-top: 4px;
+    }
+}
+.t_l_prompt{
+    background-color: #bbb;
+    padding: 5px;
+    @include borderRadius(2px);
+}
+.t_l_active{
+    box-sizing: border-box;
+    height: 28px;
+    border:1px solid $rodio-check-color !important;
+    color:$rodio-check-color;
+    background: #FFF5F5 url('./Img/time_active.png') no-repeat right bottom;
+}
+.quota_modal{
+    .quota_name{
+        text-align: center;
+        font-size: 14px;
+    }
+    .quota_list{
+        color: $color_363636;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+        li{
+            @include lh(45px);
+            .ant-btn{
+                padding: 6px 20px;
+            }
+            .ant-btn:first-child{
+                margin-right: 10px;
+            }
+        }
+    }
+    .current_quota{
+        color: $color_CF2027;
+        display: inline-block;
+        width: 50px;
+    }
+    .ant-input-number-handler-wrap{
+        display: none;
+    }
+    .ant-input-number{
+        @include borderRadius(0);
+        background-color: #fff;
+        border: 0;
+        border-bottom: 1px solid $color_363636;
+    }
+    .ant-input-number:hover{
+        border-color: #cf2027;
+    }
+    .ant-input-number-focused{
+        box-shadow: 0 0 0 0;
+        border-color: #cf2027;
+    }
+    .ant-input-number-input[disabled]{
+        color: rgb(109, 109, 109);
+    }
+    .ant-input-number-disabled .ant-input-number-input{
+        background-color: #fbfaf5;
+    }
+}
+.recharge_modal{
+    .recharge_list{
+        width: 270px;
+        margin: 0 auto;
+        li{
+            margin-bottom: 10px;
+        }
+        li:last-child{
+            margin: 20px 0 0;
+        }
+        .ant-input-number{
+            width: 190px;
+        }
+        .ant-input{
+            width: 190px;
+        }
+        .ant-btn{
+            padding: 5px 25px;
+        }
+    }
+}
+
+.spin_dp{
+    display: inline-block;
+}

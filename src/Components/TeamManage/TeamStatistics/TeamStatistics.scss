@@ -1,0 +1,87 @@
+@import '../../../Style/variables';
+@import '../../../Style/mixin';
+
+.t_st_main{
+    .t_st_people_num{
+        margin: 10px 0 5px;
+        border-bottom: 1px solid #EAEAEA;
+        li{
+            float: left;
+            width: 208px;
+            color: #fff;
+            font-size: 14px;
+            text-align: right;
+            border-left: 1px solid #E8E9E4;
+            margin: 20px 0;
+            padding: 0 20px;
+            div{
+                padding-left: 68px;
+                height: 68px;
+                padding-top: 10px;
+            }
+        }
+        li:nth-child(1){
+            color: #6D69E2;
+            border: 0;
+            div{
+                background: url(./Img/t_st_icon1.png) no-repeat center left;
+            }
+        }
+        li:nth-child(2){
+            color: #20C68E;
+            div{
+                background: url(./Img/t_st_icon3.png) no-repeat center left;
+            }
+        }
+        li:nth-child(3){
+            color: #F58B63;
+            div{
+                background: url(./Img/t_st_icon4.png) no-repeat center left;
+            }
+        }
+        li:nth-child(4){
+            color: #27AAE6;
+            div{
+                background: url(./Img/t_st_icon5.png) no-repeat center left;
+            }
+        }
+        li:nth-child(5){
+            color: #FF5757;
+            div{
+                background: url(./Img/t_st_icon6.png) no-repeat center left;
+            }
+        }
+    }
+    .t_st_broken_line{
+        position: relative;
+        background-color: #fff;
+        margin-top: 40px;
+        padding: 30px 0;
+        .t_st_select_day{
+            position: absolute;
+            top:70px;
+            right: 20px;
+            border: 1px solid #CB1313;
+            @include borderRadius(3px);
+            z-index: 9;
+            li{
+                float: left;
+                @include wh(60px, 27px);
+                line-height: 27px;
+                text-align: center;
+                border-left: 1px solid #CB1313;
+                color: #363636;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            li:first-child{
+                border: 0;
+            }
+            .select_day_active{
+                background-color: #CB1313;
+                color:#fff;
+            }
+        }
+    }
+}

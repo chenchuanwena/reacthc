@@ -1,0 +1,43 @@
+@import '../../../Style/variables';
+@import '../../../Style/mixin';
+
+.footer{
+    height: 155px;
+    padding-top: 35px;
+    color:$color_363636;
+    font-size: 12px;
+    border-top: 2px solid $color_CF2027;
+    background: #fff;
+    .f_partner_list{
+        width: $nav_width_1200;
+        margin: 0 auto;
+        li{
+            float: left;
+        }
+        .f_warm_prompt{
+            margin: 8px 70px 0;
+            text-align: center;
+            .f_warm_prompt_list{
+                padding-left: 35px;
+                span{
+                    margin: 0 5px;
+                }
+                a{
+                    color:$color_363636;
+                    &:hover{
+                        color: $color_CF2027;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .copyright_text{
+            color: #999;
+            margin-top: 20px;
+        }
+    }
+    .f_partner_text{
+        margin-bottom: 8px;
+    }
+}
+
